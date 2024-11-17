@@ -1,0 +1,78 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for project gallery */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    padding: 20px;
+    justify-items: center; /* Center align images in grid */
+}
+
+/* Individual project styling */
+.project img {
+    width: 100%;  /* Responsive width */
+    max-width: 600px;  /* Max width for each image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Maintain image proportion */
+    transition: transform 0.3s;
+}
+
+/* Hover effect on image */
+.project:hover img {
+    transform: scale(1.05);
+}
+
+/* Styling for Header */
+header {
+    background-color: #87CEEB;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    border-bottom: 5px solid #A1D8E6;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Section titles styling */
+h2 {
+    font-size: 2.8em;
+    color: #7EC8A7;
+}
+
+/* Contact Section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #7EC8A7;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5FB08D;
+}
